@@ -1,0 +1,25 @@
+{
+  "name": "kooltra-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "babel-node index.js",
+    "test": "jest --coverage",
+    "build": "babel . -d ./dist --ignore=\"node_modules\""
+  },
+  "jest": {
+    "coverageReporters": [
+      "html"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-jest": "*",
+    "babel-preset-es2015": "*",
+    "jest": "*"
+  }
+}
